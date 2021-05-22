@@ -32,11 +32,17 @@
             });
 
             $('#form .submit').on('click', () => {
+                let postData = {
+                    "name":  $('#form .name').val(),
+                    "username": $('#form .username').val(),
+                    "email": $('#form .email').val(),
+                }                
                 output.html('');
 
                 $.ajax({
                     type: 'POST',
                     url: url,
+                    data: postData,
                     success: (payload) => {
                         output.append('<li><h3>Name:' + payload.name + '</h3><p>Username:' + payload.username + '</p><p>Email:' + payload.email + '</p></li>');
                     },
