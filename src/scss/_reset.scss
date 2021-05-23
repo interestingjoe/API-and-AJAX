@@ -5,6 +5,14 @@ body {
     left: 0;
     @include font-basic;
     color: $black;
+    font-size: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    background-color: rgba(0,0,0,.05);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="dest/css/main.css">
 </head>
 <body>
-    <form id="form" method="POST">
-        <label>Name</label>
-        <input class="name" type="text" name="name" />
+    <section>
+        <div class="add-item">
+            <h2>
+                Add New Entry
+            </h2>
+            <form id="form" method="POST">
+                <label>Name</label>
+                <input class="name" type="text" name="name" />
 
-        <label>Username</label>
-        <input class="username" type="text" name="username" />
+                <label>Username</label>
+                <input class="username" type="text" name="username" />
 
-        <label>Email</label>
-        <input class="email" type="text" name="email" />
+                <label>Email</label>
+                <input class="email" type="text" name="email" />
 
-        <input class="submit" type="submit" value="Submit" />
-    </form>
+                <input class="submit" type="submit" value="Submit" />
+            </form>
+        </div>
 
-    <div class='output'>
-        <input class="find-id" type="text" name="find-id" />
-        <button class="get-data">Get Data</button>
-        <ul id="output"></ul>
-    </div>
+        <div class='find-item'>
+            <h2>
+                Find Entry
+            </h2>
+            <input class="find-id" type="text" name="find-id" />
+            <button class="get-data">Get Data</button>
+        </div>
 
+        <div class="output-item">
+            <ul id="output"></ul>
+        </div>
+    </section>
 </body>
 </html>
